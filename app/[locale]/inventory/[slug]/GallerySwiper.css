@@ -1,0 +1,22 @@
+/* Custom styles for Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque when active */
+  opacity: 0.8;
+}
+
+/* Custom styles for Swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+  transition: color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: rgba(255, 255, 255, 0.8); /* Slightly more opaque on hover */
+}

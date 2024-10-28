@@ -1,0 +1,436 @@
+{
+  "test": {
+    "title": "Titre du test",
+    "description": "Un chat mexicain"
+  },
+  "sidebar": {
+    "topmessage": "Trouvez la voiture parfaite",
+    "filters": "Filtres",
+    "make": "Marque",
+    "model": "Modèle",
+    "transmissionT": "Transmission",
+    "bodyType": "Type de carrosserie",
+    "fuelType": "Type de carburant",
+    "resetFilters": "Réinitialiser les filtres",
+    "drivetrainType": "Groupe motopropulseur",
+    "noTransmissionTypes": "Aucun type de transmission",
+    "noBodyTypes": "Aucun type de carrosserie",
+    "noFuelTypes": "Aucun type de carburant",
+    "noDrivetrainTypes": "Aucun type de transmission intégrale",
+    "filterByPrice": "Prix du véhicule",
+    "selectedPriceRange": "Plage de prix sélectionnée",
+    "filterByYear": "Année du véhicule",
+    "selectedYearRange": "Plage d'années sélectionnée",
+    "mileage": "Kilométrage",
+    "selectMileage": "Sélectionner le kilométrage",
+    "any": "N'importe lequel",
+    "under1k": "1000 km ou moins",
+    "under5k": "5000 km ou moins",
+    "under10k": "10 000 km ou moins",
+    "under20k": "20 000 km ou moins",
+    "under30k": "30 000 km ou moins",
+    "under40k": "40 000 km ou moins",
+    "under50k": "50 000 km ou moins",
+    "under60k": "60 000 km ou moins",
+    "under70k": "70 000 km ou moins",
+    "under80k": "80 000 km ou moins",
+    "under90k": "90 000 km ou moins",
+    "under100k": "100 000 km ou moins",
+    "minYear": "Année min",
+    "maxYear": "Année max",
+    "drivetrain": {
+      "4x4": "Quatre roues motrices",
+      "AWD": "Traction intégrale",
+      "FWD": "Traction avant",
+      "RWD": "Propulsion arrière"
+    },
+    "transmission": {
+      "AT": "Automatique",
+      "MT": "Manuelle"
+    },
+    "fuel": {
+      "DS":"Diesel",
+      "UL": "Essence",
+      "HB": "Hybride",
+      "EL": "Électrique"
+    },
+    "body": {
+      "Car": "Voiture",
+      "Cargovan": "Camionnette de chargement",
+      "Minivan": "Minifourgonnette",
+      "Passenger": "Fourgonnette passagers",
+      "Pickup": "Camionnette",
+      "SportUtil": "VUS"
+    }
+  },
+  "inventory": {
+    "inventory": "Voitures d'occasion",
+    "selectTab": "Sélectionner l'onglet",
+    "weFound": "Nous avons trouvé :",
+    "cars": "voitures",
+    "sortBy": "Trier par",
+    "nameAsc": "Nom ascendant",
+    "nameDesc": "Nom descendant",
+    "priceAsc": "Prix croissant",
+    "priceDesc": "Prix décroissant",
+    "condition": "État",
+    "used": "D'occasion",
+    "salePrice": "Prix",
+    "km": "km",
+    "interior": "Intérieur",
+    "stockNumber": "Numéro de stock",
+    "loadMore": "Charger plus",
+    "price": "Prix",
+    "description": "Description",
+    "additional_details": "Détails supplémentaires",
+    "back_to_inventory": "Retour à l'inventaire",
+    "search": "Rechercher",
+    "searchPlaceholder": "Tapez Marque, Modèle, Année ou numéro de stock. (ex. BMW X3 2023)",
+    "details": {
+      "features": "Caractéristiques",
+      "specifications": "Spécifications",
+      "warranty": "Garantie"
+    },
+    "transmission": {
+      "AT": "Automatique",
+      "MT": "Manuelle"
+    },
+    "fuel": {
+      "UL": "Essence",
+      "HB": "Hybride",
+      "EL": "Électrique"
+    },
+    "additionalDetails": "Détails supplémentaires",
+    "features": "Options de la voiture",
+    "getPayment": "Obtenir un paiement",
+    "valueMyTrade": "Évaluer mon échange",
+    "askDealer": "Poser une question au concessionnaire",
+    "contactDealer": "Contacter le concessionnaire",
+    "contactTitle": "Nous joindre au:",
+    "examinated": "Examiné par des experts",
+    "guarantee": "Garantie",
+    "delivery": "Livraison",
+    "warranty": "Garantie",
+    "overview": "Aperçu",
+    "make": "Marque",
+    "model": "Modèle",
+    "color": "Couleur",
+    "driveType": "Type de conduite",
+    "transmissionOverview": "Transmission",
+    "conditionOverview": "État",
+    "year": "Année",
+    "mileage": "Kilométrage",
+    "fuelType": "Type de carburant",
+    "engineSize": "Taille du moteur",
+    "cylinders": "Cylindres",
+    "doors": "Portes",
+    "seats": "Sièges",
+    "vin": "VIN",
+    "location": "Emplacement",
+    "getdirections": "Obtenir l'itinéraire"
+    
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "login": "Connexion",
+    "inventory": "Inventaire",
+    "financing": "Financement",
+    "mecanic": "Mécanique",
+    "aesthetics": "Esthétique et Carrosserie"
+  },
+  "contactSection": {
+    "title": "Nous joindre",
+    "description" : "Contactez notre service commercial dés maintenant et soyez les premiers à profiter de nos opportunités actuelles",
+    "WorkDaysLine1": "Lundi au  Vendredi",
+    "WorkDaysLine2": "Samedi",
+    "WorkDaysLine3": "Dimanche",
+    "button": "Envoyer un message",
+    "closed":"Fermé",
+    "openH": "Horaires d'ouverture"
+  },
+  "ContactPage": {
+    "titleText": "Soyez les premiers à profiter de nos opportunités actuelles" ,
+    "description": "Il existe de nombreuses façons pour nous joindre. Vous pouvez aussi nous rendre visite en concession durant nos heures d'ouvertures. N'hésitez surtout pas, nous vous réservons un accueil des plus chaleureux !",
+    "address": "Adresse",
+    "infos": "Coordonnées",
+    "titleForm": "Nous joindre",
+    "subtitleForm": "Complétez le formulaire ci-dessous, nous vous contacterons sous peu.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phoneNumber": "Téléphone",
+    "email": "Courriel",
+    "message": "Message",
+    "submit":"Envoyer"
+  },
+  "form": {
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "message": "Message",
+    "acceptTerms": "J'accepte les termes et conditions",
+    "acceptPrivacy": "J'accepte la politique de confidentialité",
+    "submit": "Soumettre",
+    "tradein_make": "Marque de l'échange",
+    "tradein_model": "Modèle de l'échange",
+    "tradein_year": "Année de l'échange",
+    "tradein_mileage": "Kilométrage de l'échange",
+    "tradein_condition": "État de l'échange",
+    "tradein_price": "Prix de l'échange",
+    "tradein_message": "Message de l'échange"
+  },
+  "HowWork": {
+    "title": "Comment ça marche ?",
+    "step1":"Remplissez le court formulaire, ça ne prend que 20 secondes!",
+    "step2":"Vous êtes PRÉ-APPROUVÉ très rapidement en seulement 10 minutes!",
+    "step3":"Repartez avec votre nouveau véhicule! toutes nos félicitations.",
+    "cta":"Appliquez maintenant!"
+  },
+  "HomeCards": {
+    "inventory":"Inventaire complet",
+    "makes":"Nos marques d'occasion",
+    "financing":"Financement",
+    "contact":"Nous joindre"
+  },
+  "Hero": {
+    "subtitle": "Accédez à un large choix de véhicules adaptés à vos besoins",
+    "titleSpan":"Vivez",
+    "title":"l'expérience supérieure"
+  },
+  "BrowseByType": {
+    "title": "Recherche par type de carrosserie",
+    "search":"Recherche detaillée",
+    "Car": "Voiture",
+    "Cargovan": "Camionnette de chargement",
+    "Minivan": "Minifourgonnette",
+    "Passenger": "Fourgonnette passagers",
+    "Pickup": "Camionnette",
+    "SportUtil": "VUS"
+  },
+  "RelatedBestCars": {
+	"relatedbestcars": "Meilleures voitures liées",
+  "used": "D'occasion"
+  },
+  "ReadyToSeize": {
+    "title":"Prêt à saisir",
+    "titleSpan":"votre opportunité ?",
+    "description":"Obtenez un financement automobile qui respecte votre budget tout en conduisant un véhicule confortable, fiable et à votre goût!",
+    "cta":"Appliquez maintenant!"
+  },
+  "theMostRecentsVehicules": {
+    "title":"Nouveaux Arrivages",
+    "brand":"Marques",
+    "makes":"Tous les modèles",
+    "price":"Prix",
+    "10k": "moins de 10k",
+    "20k": "moins de 20k",
+    "30k": "moins de 30k",
+    "40k": "moins de 40k",
+    "50k": "moins de 50k",
+    "60k": "moins de 60k",
+    "70k": "moins de 70k",
+    "80k": "moins de 80k",
+    "90k": "moins de 90k",
+    "100k": "moins de 100k",
+    "used": "D'occasion"
+  },
+  "ExplorePremiumBrands": {
+    "title": "Découvrez nos marques premium",
+    "search": "Recherche detaillée"
+  },
+  "FinanceForm": {
+    "title": "Demande de Financement rapide",
+    "description": "Obtenez le financement de votre véhicule en toute simplicité! Remplissez ce formulaire rapide en moins de 20 secondes et recevez une approbation immédiate. Profitez d’une solution rapide et sans tracas pour financer votre prochain véhicule.",
+    "step1": "Choix du type de véhicule",
+    "step2": "Parlez-nous de vous",
+    "step3": "Vos coordonnées",
+    "choiceTitle": "Choix du type de véhicule",
+    "talkTitle": "Parlez-nous de vous",
+    "infoTitle": "Vos coordonnées",
+    "salary": "Revenu net par mois?",
+    "budget": "Votre budget par mois?",
+    "work":"Vous avez un emploi?",
+    "credit": "Côte de crédit",
+    "salaryChoice1":"0 à 1500 $",
+    "salaryChoice2":"1500 à 2500$",
+    "salaryChoice3":"5000 $ et plus",
+    "salaryChoice4":"à discuter",
+    "budgetChoice1":"250 à 500$",
+    "budgetChoice2":"500 à 750 $",
+    "budgetChoice3":"750 $ et plus",
+    "workChoice1":"Oui pour une compagnie",
+    "workChoice2":"Travailleur autonome",
+    "workChoice3":"Étudiant",
+    "workChoice4":"Retraité",
+    "workChoice5":"Autre",
+    "creditChoice1":"Très bon",
+    "creditChoice2":"Moyen",
+    "creditChoice3":"Mauvais",
+    "creditChoice4":"Faillite",
+    "creditChoice5":"Aucune idée",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "submit":"Envoyer la demande",
+    "coupe": "Coupe",
+    "hatchback": "Hatchback",
+    "sedan": "Berline",
+    "vus": "VUS",
+    "convertible": "Convertible",
+    "station-wagon": "Station Wagon",
+    "pickup": "Camion",
+    "van" : "Caravan",
+    "previous": "Précedent",
+    "next": "Suivant",
+    "reset": "Réinitialiser"
+  },
+  "thankyou": {
+    "thankyou": {
+      "title": "Merci !",
+      "message": "Votre formulaire (ID : {formID}) a été soumis avec succès. Nous vous contacterons sous peu."
+    }
+  },
+"footer": {
+  "title1": "Entreprise",
+  "title2": "Marques",
+  "title3": "Type de véhicule",
+  "inventory": "Inventaire",
+  "financing": "Financement",
+  "contact": "Nous joindre",
+  "copyright": "Tous droits réservés.",
+  "terms": "Conditions générales d'utilisation",
+  "privacy": "Politique de confidentialité",
+  "poweredBy":"Propulsé par"
+},
+"terms": {
+  "title": "Politique de confidentialité de {companyName}",
+  "lastUpdated": "Date de mise à jour : 27 Septembre 2024",
+  "intro": "En accédant et en utilisant notre site, vous consentez explicitement aux termes énoncés dans cette politique de confidentialité. Chez {companyName}, nous prenons très au sérieux la protection de votre vie privée et la sécurité de vos informations personnelles. Nous avons implémenté des mesures de sécurité avancées et suivi les meilleures pratiques pour assurer que vos données sont protégées de tout accès, utilisation ou divulgation non autorisée. Ce consentement est actif dès votre première utilisation de notre site et implique votre compréhension et votre accord que nous puissions collecter, utiliser, et partager vos informations selon les pratiques décrites dans cette politique.",
+  "encouragement": "Nous vous encourageons à lire attentivement et à comprendre cette politique de confidentialité. Elle est conçue pour vous informer de nos pratiques concernant la collecte, l'utilisation, la sécurité et le partage des informations que vous nous fournissez. Votre utilisation continue de ce site après toute modification apportée à notre politique de confidentialité sera interprétée comme une acceptation de ces modifications. Nous nous engageons à vous informer de toute modification substantielle par une notification sur notre site ou par email, vous permettant ainsi de revoir les changements avant de continuer à utiliser nos services.",
+  "dataCollection": {
+    "title": "Collecte et utilisation des Données",
+    "description": "Nous recueillons divers types d'informations pour améliorer continuellement nos services et communiquer efficacement avec vous. Ces données incluent :",
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "description": "Nous collectons des informations qui peuvent vous identifier, que ce soit directement ou indirectement. Cela comprend votre nom, adresse postale, courriel, numéro de téléphone, adresse IP, et d'autres identifiants uniques. Ces informations nous permettent de gérer vos transactions, de répondre à vos questions, et de vous offrir un support client adapté."
+    },
+    "nonPersonalInfo": {
+      "title": "Informations non personnelles",
+      "description": "Nous recueillons également des données qui ne révèlent pas directement votre identité. Cela inclut des statistiques démographiques et d'autres mesures agrégées pour évaluer comment nos utilisateurs interagissent avec notre site. Ces informations nous aident à optimiser nos services et à évaluer l'efficacité de nos fonctionnalités."
+    },
+    "usageInfo": {
+      "title": "Informations d'Utilisation",
+      "description": "Ces données comprennent les détails de votre navigation sur notre site, comme les types de navigateur utilisés, les horodatages de vos visites, les pages consultées, et les interactions avec le site. Nous utilisons ces informations pour améliorer l'expérience utilisateur sur notre site et pour analyser les tendances d'utilisation."
+    }
+  },
+  "usage": {
+    "title": "Utilisation des Données",
+    "utilization": "Utilisation",
+    "description": "Nous utilisons vos informations pour les finalités suivantes :",
+    "points": "Fournir, maintenir et améliorer nos services ; Communiquer avec vous ; Personnaliser votre expérience ; Assurer la sécurité de nos services.",
+    "sharing": "Partage des Données",
+    "sharingDescription": "Nous ne vendons pas vos informations personnelles. Nous pouvons partager vos informations dans les situations suivantes :",
+    "sharingPoints": "Avec votre consentement ; Pour se conformer aux obligations légales ; Avec nos fournisseurs de services de confiance.",
+    "security": "Sécurité des Données",
+    "securityDescription": "Nous prenons la sécurité de vos données très au sérieux et mettons en œuvre des mesures de protection robustes pour prévenir tout accès non autorisé ou toute divulgation.",
+    "securityInfrastructure": "Notre infrastructure de sécurité est régulièrement mise à jour et testée pour garantir la meilleure protection possible de vos informations.",
+    "securityRetention": "Nous conservons vos données personnelles uniquement aussi longtemps que nécessaire pour les finalités décrites dans cette politique, sauf si une période de conservation plus longue est requise ou permise par la loi.",
+    "consent": "Consentement",
+    "consentDescription": "En utilisant notre site, vous consentez à notre politique de confidentialité. Vous pouvez retirer votre consentement à tout moment, mais cela pourrait affecter votre capacité à utiliser certains de nos services."
+  },
+  "cookies": {
+    "title": "Utilisation des Cookies",
+    "description": "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience sur notre site, analyser notre trafic et personnaliser le contenu. Vous pouvez contrôler l'utilisation des cookies via les paramètres de votre navigateur."
+  },
+  "modifications": {
+    "title": "Modifications de la Politique de Confidentialité",
+    "description": "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour révisée. Nous vous encourageons à consulter régulièrement cette politique pour rester informé de la manière dont nous protégeons vos informations."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Pour toute question relative à cette politique de confidentialité ou à vos données personnelles, veuillez contacter notre Responsable de la Protection des Données à l'adresse suivante : {email}"
+  }
+},
+"slider": {
+    "subtitle": "Véhicules de qualité à bas prix!",
+    "span":"Vivez",
+    "titleL1":"l'expérience supérieure",
+    "titleL2":"avec Auto Prestige",
+    "content":"et obtenez un financement 1ère, 2ème, 3ème chance au crédit!",
+    "button":"Appliquer maintenant!"
+  },
+"Aesthetics": { 
+  "title": "Services d'Esthétique et de Carrosserie",
+  "subtitle": "Profitez de nos services de qualité pour améliorer l'apparence de votre véhicule",
+  "services": {
+    "polishing": {
+      "id": "01",
+      "title": "Polissage et Correction de Peinture",
+      "description": "Redonnez à votre véhicule son éclat d'origine grâce à notre service de polissage professionnel. Nous corrigeons les imperfections, les éraflures et les marques d'oxydation pour une finition impeccable."
+    },
+    "ceramicCoating": {
+      "id": "02",
+      "title": "Protection Céramique",
+      "description": "Protégez la carrosserie de votre véhicule avec notre traitement de protection céramique haute performance, offrant une résistance durable contre les rayures, les produits chimiques, et les intempéries, tout en ajoutant un brillant intense."
+    },
+    "dentRepair": {
+      "id": "03",
+      "title": "Débosselage sans Peinture (DSP)",
+      "description": "Éliminez les bosses mineures sans avoir à repeindre votre véhicule grâce à notre méthode de débosselage sans peinture. Une solution rapide, efficace, et économique pour conserver l'intégrité de votre carrosserie."
+    },
+    "headlightRestoration": {
+      "id": "04",
+      "title": "Rénovation des Phares",
+      "description": "Améliorez la visibilité et l'esthétique de votre voiture avec notre service de rénovation des phares. Nous restaurons leur clarté d'origine pour une meilleure sécurité et un look plus net."
+    },
+    "exteriorWash": {
+      "id": "05",
+      "title": "Lavage et Décontamination Extérieure",
+      "description": "Offrez à votre véhicule un soin en profondeur avec notre service de lavage et décontamination. Nous éliminons les contaminants incrustés comme la sève d'arbre, la poussière de frein et la pollution routière pour une finition lisse et propre."
+    },
+    "interiorRestoration": {
+      "id": "06",
+      "title": "Restauration Intérieure",
+      "description": "Prenez soin de l'intérieur de votre voiture avec notre service complet de nettoyage et de restauration. Du cuir aux tissus, nous nettoyons, conditionnons et restaurons chaque surface pour un habitacle frais et luxueux."
+    }
+  } 
+},
+"Mecanic": {
+  "services": {
+    "oilChange": {
+      "id": "01",
+      "title": "Changement d'huile",
+      "description": "Optimisez votre conduite avec notre service de changement d'huile rapide, pratique et abordable. Nos techniciens experts utilisent des huiles de qualité supérieure, adaptées à votre véhicule, pour nourrir et protéger son moteur."
+    },
+    "tireInstallation": {
+      "id": "02",
+      "title": "Installation de pneus et jantes",
+      "description": "Chez Auto Prestige Montréal, notre équipe assure une installation méticuleuse, de la fixation précise des jantes à l'équilibrage minutieux, garantissant un confort inégalé. De plus, nos experts offrent un service complet, incluant la réparation de pneus, la rotation stratégique, et le calibrage précis pour une conduite optimale."
+    },
+    "batteryReplacement": {
+      "id": "03",
+      "title": "Remplacement de la batterie",
+      "description": "Votre voiture mérite une source d'alimentation fiable, et nos techniciens expérimentés sont prêts à vous fournir des batteries de haute qualité, conçues pour résister aux conditions les plus exigeantes."
+    },
+    "steeringSuspension": {
+      "id": "04",
+      "title": "Direction et suspension",
+      "description": "Grâce à notre connaissance approfondie des systèmes de direction et de suspension, nous diagnostiquons rapidement les problèmes et proposons des solutions efficaces. Chez Auto Prestige Montréal, nous veillons à ce que chaque virage soit une expérience agréable!"
+    },
+    "brakes": {
+      "id": "05",
+      "title": "Freins",
+      "description": "Offrez-vous une tranquillité d'esprit en optant pour notre service de mécanique des freins de haute qualité, essentiel à votre sécurité routière. Notre équipe experte garantit des performances optimales grâce à des diagnostics avancés, réparations et entretiens."
+    },
+    "vehicleInspection": {
+      "id": "06",
+      "title": "Contrôle des véhicules",
+      "description": "Notre équipe réalise une inspection complète pour détecter tout problème potentiel, en utilisant des équipements de pointe et une expertise approfondie. Nous identifions les problèmes mécaniques, électriques et structurels avant qu'ils ne deviennent des sources d'inquiétudes coûteuses."
+    }
+  }
+}
+}

@@ -1,0 +1,443 @@
+{
+"test": {
+	"title": "Test title",
+	"description": "A mexican cat"
+},
+"sidebar": {
+	"topmessage": "Let’s Find Your Perfect Car",
+	"filters": "Filters",
+	"make": "Make",
+	"model": "Model",
+	"transmissionT": "Transmission",
+	"bodyType": "Body Type",
+	"fuelType": "Fuel Type",
+	"resetFilters": "Reset filters",
+	"drivetrainType": "Drivetrain",
+	"noTransmissionTypes": "No transmission types",
+	"noBodyTypes": "No body types",
+	"noFuelTypes": "no fuel types",
+	"noDrivetrainTypes": "No drive trains types",
+	"filterByPrice": "Price",
+	"selectedPriceRange": "Selected price range",
+	"filterByYear": "Year",
+	"selectedYearRange": "Selected year range",
+	"mileage": "Mileage",
+	"selectMileage": "Select mileage",
+	"any": "Any",
+	"under1k": "1000km or less",
+	"under5k": "5000km or less",
+	"under10k": "10.000km or less",
+	"under20k": "20.000km or less",
+	"under30k": "30.000km or less",
+	"under40k": "40.000km or less",
+	"under50k": "50.000km or less",
+	"under60k": "60.000km or less",
+	"under70k": "70.000km or less",
+	"under80k": "80.000km or less",
+	"under90k": "90.000km or less",
+	"under100k": "100.000km or less",
+
+	"drivetrain": {
+		"4x4": "Four-wheel drive",
+		"AWD": "All wheel drive",
+		"FWD": "Front wheel drive",
+		"RWD": "Read wheel drive"
+	},
+
+	"transmission": {
+		"AT": "Automatic",
+		"MT": "Manual"
+	},
+	"fuel": {
+		"DS":"Diesel",
+		"UL": "Gasoline",
+		"HB": "Hybrid",
+		"EL": "Electric"
+	},
+	"body": {
+		"Car": "Car",
+	    "Cargovan": "Cargo Van",
+		"Minivan": "Minivan",
+		"Passenger": "Passenger Van",
+		"Pickup": "Pickup",
+		"SportUtil": "SUV"
+	}
+},
+
+"inventory": {
+	"inventory": "Used cars",
+	"selectTab": "Select tab",
+	"weFound": "We found:",
+	"cars": "cars",
+	"sortBy": "Sort by",
+	"nameAsc": "Name asc",
+	"nameDesc": "Name desc",
+	"priceAsc": "Price asc",
+	"priceDesc": "Price desc",
+	"condition": "Condition",
+	"used": "Used",
+	"salePrice": "Price",
+	"km": "km",
+	"interior": "Interior",
+	"stockNumber": "Stock no",
+	"loadMore": "Load more",
+	"price": "Price",
+	"description": "Description",
+	"additional_details": "Additional Details",
+	"back_to_inventory": "Back to Inventory",
+	"search": "Search",
+	"searchPlaceholder": "Type Make, Model, Year or stock number. (ex. BMW X3 2023)",
+	"minYear": "Min Year",
+	"maxYear": "Max Year",
+	"details": {
+		"features": "Features",
+		"specifications": "Specifications",
+		"warranty": "Warranty"
+	},
+	"transmission": {
+		"AT": "Automatic",
+		"MT": "Manual"
+	},
+	"fuel": {
+		"UL": "Gasoline",
+		"HB": "Hybrid",
+		"EL": "Electric"
+	},
+	"additionalDetails": "Aditional Details",
+	"features": "Car options",
+	"getPayment": "Get a payment",
+	"valueMyTrade": "Value my trade",
+	"askDealer": "Ask Dealer a question",
+	"contactDealer": "Contact Dealer",
+	"contactTitle": "Contact us at:",
+	"examinated": "Examinated by experts",
+	"guarantee": "Guarantee",
+	"delivery": "Delivery",
+	"warranty": "Warranty",
+	"overview": "Overview",
+	"make": "Make",
+	"model": "Model",
+	"color": "Color",
+	"driveType": "Drive Type",
+	"transmissionOverview": "Transmission",
+	"conditionOverview": "Condition",
+	"year": "Year",
+	"mileage": "Mileage",
+	"fuelType": "Fuel Type",
+	"engineSize": "Engine Size",
+	"cylinders": "Cylinders",
+	"doors": "Doors",
+	"seats": "Seats",
+	"vin": "VIN"
+},
+
+"navbar": {
+	  "home": "Home",
+	  "about": "About",
+	  "services": "Services",
+	  "contact": "Contact",
+	  "login": "Login",
+	  "inventory": "Inventory",
+	  "financing": "Financing",
+	  "mecanic": "Mecanic",
+	  "aesthetics": "Aesthetics and Body"
+},
+
+"contactSection": {
+  "title": "Contact Us",
+  "description": "Contact our sales team now and be the first to take advantage of our current opportunities",
+  "WorkDaysLine1": "Monday to Friday",
+  "WorkDaysLine2": "Saturday",
+  "WorkDaysLine3": "Sunday",
+  "button": "Send a Message",
+  "closed": "Closed",
+  "openH": "Opening Hours"
+},
+
+"ContactPage": {
+  "titleText": "Be the first to take advantage of our current opportunities",
+  "description": "There are many ways to reach us. You can also visit us at the dealership during our opening hours. Don't hesitate, we have a warm welcome waiting for you!",
+  "address": "Address",
+  "infos": "Contact Information",
+  "titleForm": "Contact Us",
+  "subtitleForm": "Fill out the form below, and we will get in touch with you shortly.",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "phoneNumber": "Phone Number",
+  "email": "Email",
+  "message": "Message",
+  "submit": "Submit"
+},
+
+"form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "acceptTerms": "I accept the terms and conditions",
+    "acceptPrivacy": "I accept the privacy policy",
+    "submit": "Submit",
+    "tradein_make": "Trade-In Make",
+    "tradein_model": "Trade-In Model",
+    "tradein_year": "Trade-In Year",
+    "tradein_mileage": "Trade-In Mileage",
+    "tradein_condition": "Trade-In Condition",
+    "tradein_price": "Trade-In Price",
+    "tradein_message": "Trade-In Message"
+  },
+"HowWork": {
+  "title": "How does it work?",
+  "step1": "Fill out the short form, it only takes 20 seconds!",
+  "step2": "You are PRE-APPROVED very quickly, in just 10 minutes!",
+  "step3": "Drive away with your new vehicle! Congratulations.",
+  "cta": "Apply now!"
+},
+"HomeCards": {
+  "inventory": "Full Inventory",
+  "makes": "Our Used Brands",
+  "financing": "Financing",
+  "contact": "Contact Us"
+},
+"Hero": {
+  "subtitle": "Access a wide range of vehicles suited to your needs",
+  "titleSpan": "Live",
+  "title": "the Superior Experience"
+},
+"BrowseByType": {
+  "title": "Search by Body Type",
+  "search": "Detailed Search",
+  "Car": "Car",
+  "Cargovan": "Cargo Van",
+  "Minivan": "Minivan",
+  "Passenger": "Passenger Van",
+  "Pickup": "Pickup",
+  "SportUtil": "SUV"
+},
+"ReadyToSeize": {
+  "title": "Ready to seize",
+  "titleSpan": "your opportunity?",
+  "description": "Get auto financing that fits your budget while driving a comfortable, reliable vehicle that suits your taste!",
+  "cta": "Apply now!"
+},
+"theMostRecentsVehicules": {
+	"title": "New Arrivals",
+	"brand": "Brands",
+	"makes": "All Models",
+	"price": "Price",
+	"10k":"Less than 10k",
+	"20k":"Less than 20k",
+	"30k":"Less than 30k",
+	"40k":"Less than 40k",
+	"50k":"Less than 50k",
+	"60k":"Less than 60k",
+	"70k":"Less than 70k",
+	"80k":"Less than 80k",
+	"90k":"Less than 90k",
+	"100k":"Less than 100k",
+	"used": "Used"
+},
+"RelatedBestCars": {
+	"relatedbestcars": "Related Best Cars",
+	"used": "Used"
+},
+"ExplorePremiumBrands": {
+  "title": "Explore Our Premium Brands",
+  "search": "Detailed Search"
+},
+"FinanceForm": {
+  "title": "Quick Financing Application",
+  "description": "Get vehicle financing with ease! Fill out this quick form in under 20 seconds and receive immediate approval. Enjoy a fast and hassle-free solution to finance your next vehicle.",
+  "step1": "Vehicle Type Selection",
+  "step2": "Tell Us About Yourself",
+  "step3": "Your Contact Information",
+  "choiceTitle": "Vehicle Type Selection",
+  "talkTitle": "Tell Us About Yourself",
+  "infoTitle": "Your Contact Information",
+  "salary": "Net monthly income?",
+  "budget": "Your monthly budget?",
+  "work": "Are you employed?",
+  "credit": "Credit Score",
+  "salaryChoice1": "0 to $1500",
+  "salaryChoice2": "$1500 to $2500",
+  "salaryChoice3": "$5000 and above",
+  "salaryChoice4": "To be discussed",
+  "budgetChoice1": "$250 to $500",
+  "budgetChoice2": "$500 to $750",
+  "budgetChoice3": "$750 and above",
+  "workChoice1": "Yes, for a company",
+  "workChoice2": "Self-employed",
+  "workChoice3": "Student",
+  "workChoice4": "Retired",
+  "workChoice5": "Other",
+  "creditChoice1": "Very good",
+  "creditChoice2": "Average",
+  "creditChoice3": "Poor",
+  "creditChoice4": "Bankruptcy",
+  "creditChoice5": "No idea",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "phone": "Phone",
+  "email": "Email",
+  "submit": "Submit Application",
+  	"coupe": "Coupe",
+	"hatchback": "Hatchback",
+	"sedan": "Sedan",
+	"vus": "SUV",
+	"convertible": "Convertible",
+	"station-wagon": "Station Wagon",
+	"pickup": "Truck",
+	"van": "Van",
+	"previous": "Previous",
+	"next": "Next",
+	"reset": "Reset"
+},
+
+"thankyou": {
+	"thankyou": {
+		"title": "Thank You!",
+		"message": "Your form (ID: {formID}) has been successfully submitted. We will get back to you shortly."
+	}
+},
+"footer": {
+	"title1":"Company",
+	"title2":"Brands",
+	"title3":"Body types",
+	"inventory":"Inventory",
+	"financing":"Financing",
+	"contact":"Contact us",
+	"copyright":"All rights reserved.",
+	"terms": "Terms and conditions",
+	"privacy": "Privacy policy",
+	"poweredBy":"Powered by"
+},
+"terms": {
+	"title": "Privacy Policy of {companyName}",
+	"lastUpdated": "Last updated: September 27, 2024",
+	"intro": "By accessing and using our site, you explicitly consent to the terms stated in this privacy policy. At {companyName}, we take the protection of your privacy and the security of your personal information very seriously. We have implemented advanced security measures and followed best practices to ensure that your data is protected from unauthorized access, use, or disclosure. This consent is active from your first use of our site and implies your understanding and agreement that we may collect, use, and share your information according to the practices described in this policy.",
+	"encouragement": "We encourage you to carefully read and understand this privacy policy. It is designed to inform you of our practices regarding the collection, use, security, and sharing of the information you provide to us. Your continued use of this site after any changes made to our privacy policy will be interpreted as an acceptance of these changes. We are committed to informing you of any substantial changes through a notification on our site or by email, allowing you to review the changes before continuing to use our services.",
+	"dataCollection": {
+		"title": "Data Collection and Use",
+		"description": "We collect various types of information to continuously improve our services and communicate effectively with you. This data includes:",
+		"personalInfo": {
+			"title": "Personal Information",
+			"description": "We collect information that can identify you, either directly or indirectly. This includes your name, postal address, email, phone number, IP address, and other unique identifiers. This information allows us to manage your transactions, answer your questions, and offer you tailored customer support."
+		},
+		"nonPersonalInfo": {
+			"title": "Non-Personal Information",
+			"description": "We also collect data that does not directly reveal your identity. This includes demographic statistics and other aggregate measures to assess how our users interact with our site. This information helps us optimize our services and evaluate the effectiveness of our features."
+		},
+		"usageInfo": {
+			"title": "Usage Information",
+			"description": "This data includes details of your navigation on our site, such as browser types used, timestamps of your visits, pages viewed, and interactions with the site. We use this information to improve the user experience on our site and to analyze usage trends."
+		}
+	},
+	"usage": {
+		"title": "Data Usage",
+		"utilization": "Utilization",
+		"description": "We use your information for the following purposes:",
+		"points": "Provide, maintain, and improve our services; Communicate with you; Personalize your experience; Ensure the security of our services.",
+		"sharing": "Data Sharing",
+		"sharingDescription": "We do not sell your personal information. We may share your information in the following situations:",
+		"sharingPoints": "With your consent; To comply with legal obligations; With our trusted service providers.",
+		"security": "Data Security",
+		"securityDescription": "We take the security of your data very seriously and implement robust protection measures to prevent unauthorized access or disclosure.",
+		"securityInfrastructure": "Our security infrastructure is regularly updated and tested to ensure the best possible protection of your information.",
+		"securityRetention": "We retain your personal data only for as long as necessary for the purposes described in this policy, unless a longer retention period is required or permitted by law.",
+		"consent": "Consent",
+		"consentDescription": "By using our site, you consent to our privacy policy. You can withdraw your consent at any time, but this may affect your ability to use certain of our services."
+	},
+	"cookies": {
+		"title": "Use of Cookies",
+		"description": "We use cookies and similar technologies to enhance your experience on our site, analyze our traffic, and personalize content. You can control the use of cookies through your browser settings."
+	},
+	"modifications": {
+		"title": "Changes to Privacy Policy",
+		"description": "We reserve the right to modify this privacy policy at any time. Any changes will be posted on this page with a revised update date. We encourage you to review this policy regularly to stay informed about how we are protecting your information."
+	},
+	"contact": {
+		"title": "Contact Us",
+		"description": "For any questions regarding this privacy policy or your personal data, please contact our Data Protection Officer at the following address: {email}"
+	}
+},
+"slider": {
+  "subtitle": "Quality Vehicles at Low Prices!",
+  "span": "Discover",
+  "titleL1": "the Superior Experience",
+  "titleL2": "with Auto Prestige",
+  "content": "and get 1st, 2nd, and 3rd chance credit financing!",
+  "button": "Apply Now!"
+  },
+	"Aesthetics": { 
+	"title": "Aesthetics and Body Services",
+	"subtitle": "Enjoy our quality services to improve the appearance of your vehicle",
+		"services": {
+			"polishing": {
+			"id": "01",
+			"title": "Polishing and Paint Correction",
+			"description": "Restore the shine of your vehicle with our professional polishing service. We correct imperfections, scratches, and oxidation marks for a flawless finish."
+			},
+			"ceramicCoating": {
+			"id": "02",
+			"title": "Ceramic Coating",
+			"description": "Protect the body of your vehicle with our high-performance ceramic coating treatment, offering durable resistance against scratches, chemicals, and weather, while adding intense shine."
+			},
+			"dentRepair": {
+			"id": "03",
+			"title": "Dent Repair without Paint (DSP)",
+			"description": "Remove minor dents without repainting your vehicle with our paintless dent repair method. A quick, effective, and cost-efficient solution to maintain the integrity of your body."
+			},
+			"headlightRestoration": {
+			"id": "04",
+			"title": "Headlight Restoration",
+			"description": "Improve the visibility and aesthetics of your car with our headlight restoration service. We restore their original clarity for better safety and a brighter look."
+			},
+			"exteriorWash": {
+			"id": "05",
+			"title": "Exterior Wash and Decontamination",
+			"description": "Give your vehicle a deep clean with our wash and decontamination service. We remove embedded contaminants like tree sap, brake dust, and road grime for a smooth and clean finish."
+			},
+			"interiorRestoration": {
+			"id": "06",
+			"title": "Interior Restoration",
+			"description": "Take care of the inside of your car with our complete cleaning and restoration service. From leather to fabric, we clean, condition, and restore each surface for a fresh and luxurious interior."
+			}
+		}
+	},
+	"Mecanic": {
+		"title": "Mecanic Services",
+		"subtitle": "Enjoy our quality services to improve the performance of your vehicle",
+		"services": {
+			"oilChange": {
+				"id": "01",
+				"title": "Oil Change",
+				"description": "Optimize your driving with our quick, convenient, and affordable oil change service. Our expert technicians use high-quality oils, tailored to your vehicle, to nourish and protect its engine."
+			},
+			"tireInstallation": {
+				"id": "02",
+				"title": "Tire Installation and Wheel Balancing",
+				"description": "At Auto Prestige Montréal, our team ensures meticulous installation, from precise wheel fixing to meticulous balancing, ensuring unparalleled comfort. In addition, our experts offer a complete service, including tire repair, strategic rotation, and precise calibration for optimal driving."
+			},
+			"batteryReplacement": {
+				"id": "03",
+				"title": "Battery Replacement",
+				"description": "Ensure your vehicle's engine starts effortlessly with our battery replacement service. Our technicians use high-quality batteries to provide reliable power, ensuring your car operates at its best."
+			},
+			"steeringSuspension": {
+				"id": "04",
+				"title": "Steering and Suspension",
+				"description": "Enhance your driving experience with our steering and suspension service. Our experts optimize your vehicle's handling and comfort, ensuring a smooth and safe ride."
+			},
+			"brakes": {	
+				"id": "05",
+				"title": "Brakes",
+				"description": "Ensure your vehicle's safety with our high-quality brake service. Our technicians use advanced techniques and materials to ensure your brakes perform optimally, providing you with peace of mind on the road."
+			},
+			"vehicleInspection": {
+				"id": "06",
+				"title": "Vehicle Inspection",
+				"description": "Get a comprehensive inspection of your vehicle with our expert technicians. We perform a thorough check of your vehicle's systems, including engine, transmission, and suspension, to ensure it operates safely and efficiently."
+			}
+		}
+	}
+}
