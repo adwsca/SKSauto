@@ -83,13 +83,16 @@ const config: Config = {
         'ared-400': '#0099cc',
         'white-20': 'rgba(255, 255, 255, 0.2)',
         'black-57': 'rgba(0, 0, 0, 0.57)',
-        'primary': '#fc1a36',
-        'secondary': '#263544',
-        'secondary-dark': '#1d2531',
+        'primary': '#e92f27',
+        'secondary': '#043874',
+        'secondary-dark': '#051c3a',
         'dark-1': '#111111',
         'dark-2': '#222222',
         'dark-3': '#333333',
-        'f7':'#f7f7f7'
+        'f1': '#f1f1f1',
+        'f6': '#f6f6f6',
+        'f7':'#f7f7f7',
+        'ed':'#ededed',
       },
       backgroundColor: {
         'custom-light-pink': 'rgba(188, 49, 73, 0.05)',  // 2% opacity of #BC3149

@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
 		<div className="flex lg:flex-row lg:justify-between flex-col justify-center lg:items-start items-center text-center lg:text-left px-4 pt-10 border-b border-white-20 md:py-[60px] md:px-20 container pb-12">
 			<div className="my-8 md:my-0 relative ml-0">
 				<Image
-					width={323}
-					height={166}
-					 src={company.companyLogo}
-					 className="w-full h-auto max-w-[280px]"
+					width={229}
+					height={90}
+					 src={company.companyLogoDark}
+					 className="w-full h-auto max-w-[200px]"
 					 alt={company.companyName}
 				/>
 				<div className="mt-8 flex justify-between items-center md:block">

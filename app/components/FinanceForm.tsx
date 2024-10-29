@@ -121,7 +121,7 @@ const FinanceForm = () => {
                                                     />
                                                     <label 
                                                         htmlFor={type} 
-                                                        className={`w-full h-[180px] bg-transparent rounded-lg cursor-pointer text-lg uppercase p-4 transition-all duration-200 ease-in-out text-left mx-auto opacity-50 hover:opacity-80 bg-contain bg-bottom bg-no-repeat ${formData.vehicleType === type ? 'bg-f7 opacity-100' : ''}`}
+                                                        className={`w-full h-[180px] bg-transparent rounded-lg cursor-pointer text-lg uppercase p-4 transition-all duration-200 ease-in-out text-left mx-auto opacity-80 hover:opacity-90 bg-contain bg-bottom bg-no-repeat ${formData.vehicleType === type ? 'bg-f7 opacity-100' : ''}`}
                                                         style={{backgroundImage: `url('/images/minicars/car-${type}.png')`}}
                                                     >
                                                         {t(type)}

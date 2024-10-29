@@ -35,26 +35,26 @@ const HomeCards = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full justify-center lg:justify-between gap-[20px]'> 
                 <Link
                     href={getLocalizedPath('/inventory')}
-                    className="w-full h-[400px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-1 bg-cover bg-center text-white">
+                    className="w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-1 bg-cover bg-center text-white">
                     <GiHomeGarage className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("inventory")}</h2>
                 </Link>
                 <Link
                     href='#brands'
                     scroll={true}
-                    className="scroll-smooth w-full h-[400px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-2 bg-cover bg-center text-white">
+                    className="scroll-smooth w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-2 bg-cover bg-center text-white">
                     <AiOutlineCar className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("makes")}</h2>
                 </Link>
                 <Link
                     href={getLocalizedPath('/financing')}
-                    className="w-full h-[400px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-3 bg-cover bg-center text-white">
+                    className="w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-3 bg-cover bg-center text-white">
                     <AiOutlineCar className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("financing")}</h2>
                 </Link>
                 <Link
                     href={getLocalizedPath('/contact')}
-                    className="w-full h-[400px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-4 bg-cover bg-center text-white">
+                    className="w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-4 bg-cover bg-center text-white">
                     <AiOutlineCar className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("contact")}</h2>
                 </Link>

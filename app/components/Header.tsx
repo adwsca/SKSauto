@@ -57,7 +57,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className='bg-black relative z-50'>
+      <header className='bg-white relative z-50'>
         <div className="container lg:py-[20px] py-[20px] lg:px-4 px-4 w-full flex justify-between items-center relative z-60">
           <div className='lg:hidden'>
             <Link href={`tel:${company.companyPhoneNumber}`}>
@@ -68,16 +68,16 @@ const Header: React.FC = () => {
           <div className="flex justify-center items-center">
             <Link href="/">
               <Image
-                width={323}
-                height={166}
+                width={229}
+                height={90}
                 src={company.companyLogo}
                 alt={company.companyName}
-                className="max-w-[200px] h-auto lg:max-w-[280px]"
+                className="max-w-[180px] h-auto lg:max-w-[200px]"
               />
             </Link>
           </div>
 
-          <div className="hidden lg:block text-md text-right text-gray-300">
+          <div className="hidden lg:block text-md text-right text-dark-3">
             <Link href={company.googleMapLink} target='_blank' className="flex justify-end items-center mt-3 hover:text-grey-forza transition-all duration-300 linear"> 
               <div className="mr-3">
                 <PiMapPinLight className='text-primary text-2xl' />
@@ -97,9 +97,9 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <FiX className='text-4xl text-white' />
+              <FiX className='text-4xl text-dark-2' />
             ) : (
-              <FiMenu className='text-4xl text-white' />
+              <FiMenu className='text-4xl text-dark-2' />
             )}
           </div>
 
@@ -108,10 +108,10 @@ const Header: React.FC = () => {
         {/* Menu mobile */}
         <div 
           ref={menuRef}
-          className={`fixed top-[81px] left-0 right-0 bg-black z-40 transform ${
+          className={`fixed top-[110px] left-0 right-0 bg-secondary z-40 transform ${
             isMenuOpen ? 'translate-y-0' : '-translate-y-full'
           } transition-transform duration-500 linear lg:hidden overflow-hidden`}
-          style={{ maxHeight: isMenuOpen ? 'calc(100vh - 81px)' : '0' }}
+          style={{ maxHeight: isMenuOpen ? 'calc(100vh - 110px)' : '0' }}
         >
           <nav className="py-6">
             <Link 
@@ -141,22 +141,6 @@ const Header: React.FC = () => {
             >
               {t('financing')}
             </Link>
-            <Link href={getLocalizedPath('/mecanic')} className={`block py-3 px-4 text-white text-lg hover:bg-primary hover:text-white transition-colors duration-200 ${
-                isActiveRoute('/mecanic') ? 'bg-primary' : ''
-              }`} 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('mecanic')}
-            </Link>
-            <Link 
-              href={getLocalizedPath('/aesthetics')} 
-              className={`block py-3 px-4 text-white text-lg hover:bg-primary hover:text-white transition-colors duration-200 ${
-                isActiveRoute('/aesthetics') ? 'bg-primary' : ''
-              }`} 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('aesthetics')}
-            </Link>
             <Link 
               href={getLocalizedPath('/contact')} 
               className={`block py-3 px-4 text-white text-lg hover:bg-primary hover:text-white transition-colors duration-200 ${
@@ -178,7 +162,7 @@ const Header: React.FC = () => {
 
         {/* Overlay */}
         <div 
-          className={`fixed top-[100px] inset-0 bg-black z-30 transition-opacity duration-300 ${
+          className={`fixed top-[110px] inset-0 bg-black z-30 transition-opacity duration-300 ${
             isMenuOpen ? 'opacity-80' : 'opacity-0 pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)}

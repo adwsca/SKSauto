@@ -9,7 +9,7 @@ import Link from 'next/link';
 const MapSection: React.FC = () => {    
     const company = companyInfo[0];
     const markers = [
-        { lat: 45.62280787416511, lng: -73.59739337116434 }
+        { lat: company.companyLat, lng: company.companyLog }
     ]
     const t = useTranslations('contactSection'); // Use the 'contactSection' namespace for translations
 	return (

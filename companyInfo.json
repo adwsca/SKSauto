@@ -1,21 +1,21 @@
 [
     {
-      "companyName": "Auto Prestige Montreal",
-      "companyLogo": "/images/logo-autoprestige-light.png",
-      "companyLogoDark": "/images/logo-autoprestige-dark.png",
-      "companyAddress": "11690B Av. Philippe-Panneton Montreal Quebec",
-      "companyPhoneNumber": "+1 514 261 0966",
-      "companyEmail": "autoprestigemtl@gmail.com",
-      "companyLat": 45.62280787416511,
-      "companyLog": -73.59739337116434,
+      "companyName": "SKS Auto",
+      "companyLogo": "/images/logo-sks.png",
+      "companyLogoDark": "/images/logo-sks-light.png",
+      "companyAddress": "261 boul Curé-Labelle, Sainte-rose Laval, Quebec, Canada, H7L 2Z9",
+      "companyPhoneNumber": "+1 450 625-6080",
+      "companyEmail": "info@sksauto.ca",
+      "companyLat": 45.59956796400797, 
+      "companyLog": -73.78948761726659,
       "mapsZoomLevel": 13,
-      "url": "https://www.autoprestigemtl.com",
-      "googleMapLink":"https://www.google.com/maps/place/Auto+Prestige+Montreal/@45.6226503,-73.5974041,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91fdc1d97c6dd:0x82f9d11d089b61c!8m2!3d45.6226503!4d-73.5974041!16s%2Fg%2F11j080zhxx?hl=fr-FR&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D",
-      "linkFacebook": "https://facebook.com",
+      "url": "https://www.sksauto.ca/",
+      "googleMapLink":"https://maps.app.goo.gl/nWNvDEy9rBL5bua6A",
+      "linkFacebook": "https://web.facebook.com/occasionlavalsksauto",
       "linkTwitter": "https://twitter.com",
       "linkInstagram": "https://instagram.com",
       "linkLinkedin": "https://linkedin.com",
-      "timeWorkLine1": "09:00 am - 05:00 pm",
-      "timeWorkLine2": "09:00 am - 05:00 pm"
+      "timeWorkLine1": "09:00 am - 07:00 pm",
+      "timeWorkLine2": "10:00 am - 03:00 pm"
     }
 ]

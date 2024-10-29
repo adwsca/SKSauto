@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="hidden lg:block w-full relative z-10 bg-secondary">
-      <div className="w-full container flex items-center justify-between px-20 lg:px-4 uppercase">
+      <div className="w-full container flex items-center justify-between px-20 lg:px-4 text-xl font-semibold">
         <nav>
           {/* Links with active highlighting */}
           <Link href={getLocalizedPath('/')} className={`inline-block relative px-6 py-[22px] text-white before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-2 
@@ -51,21 +51,13 @@ const Navbar: React.FC = () => {
             ${isActiveRoute(getLocalizedPath('/financing')) ? 'before:bg-primary' : 'before:bg-transparent hover:before:bg-primary before:transition-colors before:duration-300'}`}>
             {t('financing')}
           </Link>
-          <Link href={getLocalizedPath('/mecanic')} className={`inline-block relative px-6 py-[22px] text-white before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-2 
-            ${isActiveRoute(getLocalizedPath('/mecanic')) ? 'before:bg-primary' : 'before:bg-transparent hover:before:bg-primary before:transition-colors before:duration-300'}`}>
-            {t('mecanic')}
-          </Link>
-          <Link href={getLocalizedPath('/aesthetics')} className={`inline-block relative px-6 py-[22px] text-white before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-2 
-            ${isActiveRoute(getLocalizedPath('/aesthetics')) ? 'before:bg-primary' : 'before:bg-transparent hover:before:bg-primary before:transition-colors before:duration-300'}`}>
-            {t('aesthetics')}
-          </Link>
           <Link href={getLocalizedPath('/contact')} className={`inline-block relative px-6 py-[22px] text-white before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-2 
             ${isActiveRoute(getLocalizedPath('/contact')) ? 'before:bg-primary' : 'before:bg-transparent hover:before:bg-primary before:transition-colors before:duration-300'}`}>
             {t('contact')}
           </Link>
         </nav>
 
-        <ul className="flex justify-between items-center text-base">
+        <ul className="flex justify-between items-center text-xl">
           <li className="relative group">
             <Link href={getOppositeLocaleLink()} className={`inline-block relative px-6 py-[22px] text-white before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-2 
               ${isActiveRoute('/contact') ? 'before:bg-primary' : 'before:bg-transparent hover:before:bg-primary before:transition-colors before:duration-300'}`}>

@@ -12,16 +12,19 @@ import HomeCards from "../components/Homecards";
 import HowWork from "../components/HowWork";
 import ReadyToSeize from "../components/ReadyToSeize";
 import { SliderHome } from "../components/SliderHome";
+import HomeSearchBar from "../components/HomeSearchBar";
+import HelloCompany from "../components/HelloCompany";
 
 export default function Home() {
   return (
     <>
+      <HomeSearchBar />
       <SliderHome />
+      <HelloCompany />
       <HomeCards />
       <HowWork />
       <BrowseByType/>
       <ReadyToSeize />
-      <TheMostRecentsVehicles/>
       <ExplorePremiumBrands/>
       <ContactSection/>
     </>
