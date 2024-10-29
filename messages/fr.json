@@ -509,5 +509,19 @@
   "businessDescription": "Description de l'entreprise",
   "authorization": "J'autorise {companyName} à obtenir une copie de mes dossiers de crédit",
   "socialSecurityNumber": "Numéro d'assurance sociale"
+},
+"HeroVideoSlider": {
+  "title1": "Découvrez",
+  "subtitle1": "la qualité et le Service",
+  "description1": "Accès à un large éventail de véhicules",
+  "buttonText1": "Appliquer maintenant!",
+  "title2": "Vivez",
+  "subtitle2": "l'expérience supérieure",
+  "description2": "Pour une Aventure Automobile Unique",
+  "buttonText2": "Voir l'inventaire",
+  "title3": "Joignez",
+  "subtitle3": "la Communauté",
+  "description3": "Pour une Aventure Automobile Unique",
+  "buttonText3": "Contactez-nous"
 }
 }

@@ -11,8 +11,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
+import companyInfo from '../../companyInfo.json';
+const company = companyInfo[0]; 
+
 export const metadata: Metadata = {
-  title: "AutoPrestige | Montreal",
+  title: company.companyName,
   description: "The best place to find used vehicles in Montreal.",
 };
 

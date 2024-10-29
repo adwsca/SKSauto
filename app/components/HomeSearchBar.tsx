@@ -96,7 +96,7 @@ const HomeSearchBar: React.FC = () => {
 						</option>
 						))}
 					</select>
-					<button type="submit" className="w-full flex items-center justify-center py-3 px-4 bg-secondary text-white hover:bg-dark-2 transition-all duration-200 ease-in-out rounded-[10px] lg:py-[12px] lg:px-8 lg:pl-[35px] lg:rounded-lg lg:max-w-[320px] outline-none">
+					<button type="submit" className="w-full flex items-center justify-center py-3 px-4 bg-secondary text-white hover:bg-secondary-dark transition-all duration-200 ease-in-out rounded-[10px] lg:py-[12px] lg:px-8 lg:pl-[35px] lg:rounded-lg lg:max-w-[320px] outline-none">
 						<RiSearchLine className='size-6 lg:size-7 mr-3' />
 						<span className="text-lg font-medium">{t("search")}</span>
 					</button>

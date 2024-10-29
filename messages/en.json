@@ -518,5 +518,19 @@
 		"businessDescription": "Business Description",
 		"authorization": "I authorize {companyName} to obtain a copy of my credit files",
 		"socialSecurityNumber": "Social Security Number"
-	}
+	},
+"HeroVideoSlider": {
+  "title1": "Discover",
+  "subtitle1": "Quality and Service",
+  "description1": "Access to a Wide Range of Vehicles",
+  "buttonText1": "Apply Now!",
+  "title2": "Experience",
+  "subtitle2": "the Superior Experience",
+  "description2": "For a Unique Automotive Adventure",
+  "buttonText2": "View Inventory",
+  "title3": "Join",
+  "subtitle3": "the Community",
+  "description3": "For a Unique Automotive Adventure",
+  "buttonText3": "Contact Us"
+}
 }

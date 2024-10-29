@@ -14,12 +14,13 @@ import ReadyToSeize from "../components/ReadyToSeize";
 import { SliderHome } from "../components/SliderHome";
 import HomeSearchBar from "../components/HomeSearchBar";
 import HelloCompany from "../components/HelloCompany";
+import HeroVideoSlider from '../components/HeroVideoSlider';
 
 export default function Home() {
   return (
     <>
       <HomeSearchBar />
-      <SliderHome />
+      <HeroVideoSlider />
       <HelloCompany />
       <HomeCards />
       <HowWork />
