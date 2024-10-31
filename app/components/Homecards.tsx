@@ -8,6 +8,8 @@ import { useLocale, useTranslations } from 'next-intl';
 // React icons
 import { GiHomeGarage } from "react-icons/gi";
 import { AiOutlineCar } from "react-icons/ai";
+import { LuBadgeDollarSign } from "react-icons/lu";
+import { FiPhoneCall } from "react-icons/fi";
 
 
 const HomeCards = () => {
@@ -49,13 +51,13 @@ const HomeCards = () => {
                 <Link
                     href={getLocalizedPath('/financing')}
                     className="w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-3 bg-cover bg-center text-white">
-                    <AiOutlineCar className='text-6xl text-primary' />
+                    <LuBadgeDollarSign className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("financing")}</h2>
                 </Link>
                 <Link
                     href={getLocalizedPath('/contact')}
                     className="w-full h-[450px] bg-slate-200 flex flex-col justify-end items-center py-[40px] gap-[20px] hover:text-primary hover:font-bold hover:border-b-[10px] hover:border-primary transition-all duration-200 ease-in-out rounded-xl hover:shadow-[rgba(50,_50,_93,_0.25)_0px_13px_27px_-5px,_rgba(0,_0,_0,_0.3)_0px_8px_16px_-8px] bg-bannerHome-4 bg-cover bg-center text-white">
-                    <AiOutlineCar className='text-6xl text-primary' />
+                    <FiPhoneCall className='text-6xl text-primary' />
                     <h2 className='text-[22px]'>{t("contact")}</h2>
                 </Link>
             </div>

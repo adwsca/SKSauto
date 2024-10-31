@@ -67,24 +67,10 @@ const Footer: React.FC = () => {
 				/>
 				<div className="mt-8 flex justify-between items-center md:block">
 					<ul className="flex items-center justify-center w-full h-auto mx-auto">
+						<p className='text-white font-normal mr-3'>Suivez-nous sur :</p>
 						<li className="mr-2">
-							<Link href={company.linkFacebook} target="_blank" className="flex items-center justify-center size-10 rounded-full hover:bg-primary transition-all ease-in-out">
-							<FaFacebookF className='text-white' />
-							</Link>
-						</li>
-						<li className="mr-2">
-							<Link href={company.linkTwitter} target="_blank" className="flex items-center justify-center size-10 rounded-full hover:bg-primary transition-all ease-in-out">
-							<FaXTwitter className='text-white' />
-							</Link>
-						</li>
-						<li className="mr-2">
-							<Link href={company.linkInstagram} target="_blank" className="flex items-center justify-center size-10 rounded-full hover:bg-primary transition-all ease-in-out">
-							<FaInstagram className='text-white' />
-							</Link>
-						</li>
-						<li className="mr-2">
-							<Link href={company.linkLinkedin} target="_blank" className="flex items-center justify-center size-10 rounded-full hover:bg-primary transition-all ease-in-out">
-							<FaLinkedinIn className='text-white' />
+							<Link href={company.linkFacebook} target="_blank" className="flex items-center justify-center size-10 rounded-full bg-primary hover:bg-white text-white hover:text-secondary transition-all ease-in-out">
+							<FaFacebookF />
 							</Link>
 						</li>
 					</ul>
