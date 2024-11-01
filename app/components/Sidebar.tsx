@@ -62,7 +62,7 @@ const Sidebar = ({ onFilterChange }: { onFilterChange: (filters: any) => void })
 
   const [range, setRange] = useState([20, 80]);
 
-  const handleRangeChange = (newRange) => {
+  const handleRangeChange = (newRange : any) => {
     setRange(newRange);
   };
 
@@ -88,7 +88,7 @@ const Sidebar = ({ onFilterChange }: { onFilterChange: (filters: any) => void })
   const [priceRange, setPriceRange] = useState<{ minPrice: number; maxPrice: number }>({ minPrice: 0, maxPrice: 100000 });
   const [selectedPriceRange, setSelectedPriceRange] = useState<[number, number]>([0, 100000]);
 
-  const [yearRange, setYearRange] = useState<{ minYear: Number; maxYear: number }>({ minYear: 1990, maxYear: 2030 });
+  const [yearRange, setYearRange] = useState<{ minYear: number; maxYear: number }>({ minYear: 1990, maxYear: 2030 });
   const [selectedYearRange, setSelectedYearRange] = useState<[number, number]>([1990, 2030]);
 
   const resetFilters = () => {
@@ -134,18 +134,23 @@ const Sidebar = ({ onFilterChange }: { onFilterChange: (filters: any) => void })
     fetchYearRange().then((range) => {
       console.log('Setting year range in state:', range);
 
-      setYearRange(range);
+      // setYearRange(range);
+      setYearRange({ minYear: range.minYear, maxYear: range.maxYear });
       setSelectedYearRange([range.minYear, range.maxYear]); // Initialize selected range
     });
 
   }, []);
 
-  const handlePriceRangeChange = (newRange: [number, number]) => {
-    console.log('Price range changed:', newRange); 
-    setSelectedPriceRange(newRange);
-
-     // Call the debounced function
-    debounceApplyPriceRange(newRange);
+  const handlePriceRangeChange = (value: number | number[]) => {
+    if (Array.isArray(value)) {
+      const newRange: [number, number] = value as [number, number]; // Assert the type
+      console.log('Price range changed:', newRange);
+      setSelectedPriceRange(newRange);
+      debounceApplyPriceRange(newRange);
+    } else {
+      // If a single number is received (though unlikely with a range slider), handle it accordingly
+      console.warn('Expected an array for the price range but received a single number:', value);
+    }
   };
 
 
@@ -421,48 +426,48 @@ const debounceApplyPriceRange = debounce((newRange: [number, number]) => {
             <div className="relative text-ablack-600">
 
             <Accordion title={t('filterByPrice')} defaultOpen={true}>
-                <div className="relative max-h-64">
-                <Slider 
-                    range 
-                    value={selectedPriceRange} 
-                    onChange={handlePriceRangeChange} 
-                    min={priceRange.minPrice} 
-                    max={priceRange.maxPrice} 
-                    step={1000} // Adăugat pasul de 1000
-                    className="rc-slider-handle:hidden mb-6"
-                    styles={{
-                      rail: {
-                        background: `#DEDEDE`,
-                      },
-                      track: {
-                        background: '#050B20',
-                      },
-                      handle : {
-                        borderColor: 'blue',
-                        height: 23,
-                        width: 23,
-                        marginTop: -10,
-                        borderRadius: 6,
-                        backgroundColor: '#fff',
-                        opacity: 1,
-                        border: 'none',
-                        boxShadow: '0px 1px 2px rgba(000,000,000,0.25)',
-                        backgroundImage: 'url(/images/handle.svg)',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center'
-                      }
-                    }}
-                />
+  <div className="relative max-h-64">
+    <Slider 
+      range 
+      value={selectedPriceRange} 
+      onChange={handlePriceRangeChange} 
+      min={priceRange.minPrice} 
+      max={priceRange.maxPrice} 
+      step={1000} // Set step value as needed
+      className="rc-slider-handle:hidden mb-6"
+      styles={{
+        rail: {
+          background: `#DEDEDE`,
+        },
+        track: {
+          background: '#050B20',
+        },
+        handle: {
+          borderColor: 'blue',
+          height: 23,
+          width: 23,
+          marginTop: -10,
+          borderRadius: 6,
+          backgroundColor: '#fff',
+          opacity: 1,
+          border: 'none',
+          boxShadow: '0px 1px 2px rgba(000,000,000,0.25)',
+          backgroundImage: 'url(/images/handle.svg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center'
+        }
+      }}
+    />
 
-                    <span className="absolute bottom-[-30px] left-0 text-base text-agray-800">
-                      ${selectedPriceRange[0]}
-                    </span>
+    <span className="absolute bottom-[-30px] left-0 text-base text-agray-800">
+      ${selectedPriceRange[0]}
+    </span>
 
-                    <span className="absolute bottom-[-30px] right-0 text-base text-agray-800">
-                      ${selectedPriceRange[1]}
-                    </span>
-                </div>
-              </Accordion>
+    <span className="absolute bottom-[-30px] right-0 text-base text-agray-800">
+      ${selectedPriceRange[1]}
+    </span>
+  </div>
+</Accordion>
 
               {isFilterApplied && (
               <div className="flex">
@@ -511,52 +516,49 @@ const debounceApplyPriceRange = debounce((newRange: [number, number]) => {
                 </div>
               </Accordion>
 
-              <Accordion title={t('filterByYear')}>
-                <div className="relative max-h-64 flex justify-between">
-                  <select
-                    value={selectedMileage}
-                    onChange={handleMileageChange}
-                    className="w-[48%] px-4 py-3 bg-white border-[#DEDEDE] rounded-[8px] outline-none mb-2 text-agray-800 text-sm"
-                  >
-                    <option value="">{t('minYear')}</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                  </select>
-                  <select
-                    value={selectedMileage}
-                    onChange={handleMileageChange}
-                    className="w-[48%] px-4 py-3 bg-white border-[#DEDEDE] rounded-[8px] outline-none mb-2 text-agray-800 text-sm"
-                  >
-                    <option value="">{t('maxYear')}</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                  </select>
-                </div>
-              </Accordion>
+            <Accordion title={t('filterByYear')} defaultOpen={true}>
+              <div className="relative max-h-64 flex justify-between">
+                <select
+                  value={selectedYearRange[0]}
+                  onChange={(e) => {
+                    const minYear = parseInt(e.target.value, 10);
+                    setSelectedYearRange([minYear, selectedYearRange[1]]);
+                    onFilterChange({
+                      minYear: minYear,
+                      maxYear: selectedYearRange[1],
+                    });
+                  }}
+                  className="w-[48%] px-4 py-3 bg-white border-[#DEDEDE] rounded-[8px] outline-none mb-2 text-agray-800 text-sm"
+                >
+                  <option value="">{t('minYear')}</option>
+                  {Array.from({ length: yearRange.maxYear - yearRange.minYear + 1 }, (_, i) => (
+                    <option key={i} value={yearRange.minYear + i}>
+                      {yearRange.minYear + i}
+                    </option>
+                  ))}
+                </select>
+
+                <select
+                  value={selectedYearRange[1]}
+                  onChange={(e) => {
+                    const maxYear = parseInt(e.target.value, 10);
+                    setSelectedYearRange([selectedYearRange[0], maxYear]);
+                    onFilterChange({
+                      minYear: selectedYearRange[0],
+                      maxYear: maxYear,
+                    });
+                  }}
+                  className="w-[48%] px-4 py-3 bg-white border-[#DEDEDE] rounded-[8px] outline-none mb-2 text-agray-800 text-sm"
+                >
+                  <option value="">{t('maxYear')}</option>
+                  {Array.from({ length: yearRange.maxYear - yearRange.minYear + 1 }, (_, i) => (
+                    <option key={i} value={yearRange.minYear + i}>
+                      {yearRange.minYear + i}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </Accordion>
 
               <Accordion title={t('mileage')}>
                 <select

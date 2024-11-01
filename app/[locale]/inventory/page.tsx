@@ -14,6 +14,8 @@ import { MdOutlineSpeed, MdOutlineSettingsInputComponent } from "react-icons/md"
 import { HiOutlineHashtag } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
 import Image from 'next/image';
+import { routing } from '../../../i18n/routing'; // Ensure this path is correct based on your project structure
+
 
 type Car = {
   _id: { $oid: string };
@@ -43,8 +45,7 @@ const Inventory = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState(24);
- // const [sortOption, setSortOption] = useState<string>('name-asc');
-  const [searchQuery, setSearchQuery] = useState<string>(''); // State for search query
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
   const searchParams = useSearchParams();
 
@@ -58,42 +59,38 @@ const Inventory = () => {
         }
 
         const data: Car[] = await response.json();
-        // v1      setFilteredCars(data);
-        // v1.2 setCars
         setCars(data);
 
         const sortedCars = data.sort((a, b) => a.price - b.price);
         setFilteredCars(sortedCars); // Set filtered cars to the sorted array
 
-
         const makeQuery = searchParams.get('make');
         const modelQuery = searchParams.get('model');
         const yearsQuery = searchParams.get('year');
         const typeQuery = searchParams.get('type');
-        
-      //  const filtered = data.filter(car => {
+
         const filtered = sortedCars.filter(car => {
           let matches = true;
-        
+
           if (makeQuery) {
             matches = matches && car.make.toLowerCase() === makeQuery.toLowerCase();
           }
-        
+
           if (modelQuery) {
             matches = matches && car.model.toLowerCase() === modelQuery.toLowerCase();
           }
-        
+
           if (yearsQuery) {
             matches = matches && car.year.toString() === yearsQuery;
           }
-        
+
           if (typeQuery) {
             matches = matches && car.category.toLowerCase() === typeQuery.toLowerCase();
           }
-        
+
           return matches;
         });
-        
+
         setFilteredCars(filtered);
 
       } catch (error) {
@@ -118,10 +115,9 @@ const Inventory = () => {
     maxPrice?: number;
     minYear?: number;
     maxYear?: number;
-	  maxKm?: string;
+    maxKm?: string;
   }) => {
     let filtered = cars;
-    console.log("cars in filter", cars); 
     const selectedMakes = filters.makes || [];
     const selectedModels = filters.models || {};
     const selectedTransTypes = filters.transtype || [];
@@ -131,11 +127,9 @@ const Inventory = () => {
 
     const minPrice = filters.minPrice || 0;
     const maxPrice = filters.maxPrice || Number.MAX_VALUE;
-
     const minYear = filters.minYear || 0;
     const maxYear = filters.maxYear || Number.MAX_VALUE;
-
-	  const maxKm = filters.maxKm ? parseInt(filters.maxKm, 10) : Number.MAX_VALUE;  // Parse the mileage filter
+    const maxKm = filters.maxKm ? parseInt(filters.maxKm, 10) : Number.MAX_VALUE;
 
     if (selectedMakes.length > 0) {
       filtered = filtered.filter((car) => selectedMakes.includes(car.make));
@@ -168,20 +162,22 @@ const Inventory = () => {
 
     filtered = filtered.filter((car) => car.price >= minPrice && car.price <= maxPrice);
     filtered = filtered.filter((car) => car.year >= minYear && car.year <= maxYear);
-
-	  // Apply mileage filter
     filtered = filtered.filter((car) => parseInt(car.km, 10) <= maxKm);
-
 
     // Apply search filter
     if (searchQuery.trim() !== '') {
       const searchTerms = searchQuery.toLowerCase().split(' ').filter(term => term);
-
       filtered = filtered.filter((car) => {
         const carDetails = `${car.make.toLowerCase()} ${car.model.toLowerCase()} ${car.year} ${car.stocknumber.toLowerCase()}`;
         return searchTerms.every(term => carDetails.includes(term));
       });
     }
+
+    // Sort filtered cars by year if the year range filter is applied
+    if (minYear > 0 || maxYear < Number.MAX_VALUE) {
+      filtered.sort((a, b) => a.year - b.year);
+    }
+
     setFilteredCars(filtered);
   };
 
@@ -202,7 +198,6 @@ const Inventory = () => {
 
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
-   // setSortOption(value);
 
     let sortedCars = [...filteredCars];
 
@@ -238,10 +233,20 @@ const Inventory = () => {
     return <div className="text-red-500">{t('error')}: {error}</div>;
   }
 
+  // Get the localized path based on the routing config
+  const getLocalizedPath = (path: string) => {
+    const localizedPathObject = routing.pathnames[path];
+
+    if (localizedPathObject) {
+      return localizedPathObject[currentLocale] || path; // Return the localized path for the current locale or fallback to the original path
+    }
+    
+    return path; // Fallback to the original path if not found in routing.pathnames
+  };
+
   const generateSlug = (car: Car): string => {
     return `${car.make.toLowerCase()}-${car.model.toLowerCase()}-${car.year}-${car._id}`;
   };
-
 
   return (
     <>
@@ -282,12 +287,13 @@ const Inventory = () => {
               const slug = generateSlug(car);
 
               return (
-                <Link key={car._id} href={`/inventory/${slug}`} passHref legacyBehavior>
+                <Link key={car._id} href={getLocalizedPath(`/inventory/${slug}`)} passHref legacyBehavior>
                   <div className="block border border-agray-500 overflow-hidden rounded-2xl cursor-pointer">
                     <div className="block relative">
                       <img
                         alt={`${car.make} ${car.model} for sale`}
                         src={car.photo.split(',')[0]}
+                     
                         className="w-full h-[240px] object-cover object-center"
                       />
                     </div>
