@@ -110,7 +110,7 @@ const PrivacyPage = ({ params }: { params: { locale: string } }) => {
         </div>
 
         <p className="text-lg text-gray-700 mb-4 text-justify">
-          En accédant et en utilisant https://www.dfab.ca/, vous consentez explicitement aux termes énoncés dans cette politique de confidentialité. Chez {company.companyName}, nous prenons très au sérieux la protection de votre vie privée et la sécurité de vos informations personnelles. Nous avons implémenté des mesures de sécurité avancées et suivi les meilleures pratiques pour assurer que vos données sont protégées de tout accès, utilisation ou divulgation non autorisée. Ce consentement est actif dès votre première utilisation de notre site et implique votre compréhension et votre accord que nous puissions collecter, utiliser, et partager vos informations selon les pratiques décrites dans cette politique.
+          En accédant et en utilisant {company.url}, vous consentez explicitement aux termes énoncés dans cette politique de confidentialité. Chez {company.companyName}, nous prenons très au sérieux la protection de votre vie privée et la sécurité de vos informations personnelles. Nous avons implémenté des mesures de sécurité avancées et suivi les meilleures pratiques pour assurer que vos données sont protégées de tout accès, utilisation ou divulgation non autorisée. Ce consentement est actif dès votre première utilisation de notre site et implique votre compréhension et votre accord que nous puissions collecter, utiliser, et partager vos informations selon les pratiques décrites dans cette politique.
         </p>
         <p className="text-lg text-gray-700 mb-4 text-justify">
          Nous vous encourageons à lire attentivement et à comprendre cette politique de confidentialité. Elle est conçue pour vous informer de nos pratiques concernant la collecte, l&apos;utilisation, la sécurité et le partage des informations que vous nous fournissez. Votre utilisation continue de ce site après toute modification apportée à notre politique de confidentialité sera interprétée comme une acceptation de ces modifications. Nous nous engageons à vous informer de toute modification substantielle par une notification sur notre site ou par email, vous permettant ainsi de revoir les changements avant de continuer à utiliser nos services.
@@ -180,7 +180,7 @@ const PrivacyPage = ({ params }: { params: { locale: string } }) => {
             Nous pouvons mettre à jour cette politique périodiquement. Nous vous informerons de toute modification significative par une annonce sur notre site ou par email.
           </p>
           <p className="text-lg text-gray-700 mb-4 text-justify">
-            Contactez-nous Pour toute question relative à cette politique ou vos données personnelles, veuillez contacter notre Responsable de la Protection des Données à infos@dfab.ca.
+            Contactez-nous Pour toute question relative à cette politique ou vos données personnelles, veuillez contacter notre Responsable de la Protection des Données à {company.companyEmail}.
           </p>
           <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-10">
             Contactez-nous
